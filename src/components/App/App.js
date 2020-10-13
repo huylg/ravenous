@@ -25,11 +25,15 @@ for(let i=0;i<=4;i++){
   businesses.push(item);
 }
 
+function searchYelp(term, location, sortBy){
+  console.log(term, location, sortBy);
+}
+
 function App() {
   return (
     <div className="App">
       <h1>ravenous</h1>
-      <SearchBar />
+      <SearchBar searchYelp={searchYelp} />
       <BusinessList businesses={businesses} />
     </div>
   );
